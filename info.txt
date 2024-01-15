@@ -1,0 +1,5 @@
+CLASES:
+
+Tablero (posicion personaje, posicion entrada, posicion salida, dimensiones )
+Personaje (nombre, fuerza, destreza, vida, resistencia e inteligencia)
+Simulador (Inicio juego, Fin juego (Salida, Muerte), Batalla, Movimiento)
