@@ -1,0 +1,31 @@
+/**
+ *
+ * @author david
+ */
+package proyectgame;
+
+public class Simulador {
+
+    public static void main(String[] args) {
+        Personaje heroe = new Personaje("heroe", 4, 6, 100, 4, 8);
+        Personaje monstruo = new Personaje("monstruo", 8, 3, 100, 6, 3);
+
+        double NumeroRandom = Math.random();
+        int NumeroRandomEntero = (int) (NumeroRandom * 2);
+
+        if (NumeroRandomEntero == 0) {
+
+            monstruo.atacar(heroe);
+            System.out.println("El monstruo ha atacado");
+        } else {
+
+            heroe.atacar(monstruo);
+            System.out.println("El heroe ha atacado");
+        }
+
+        System.out.println("Vida de monstruo " + monstruo.getVida());
+        System.out.println("Vida de heroe " + heroe.getVida());
+
+    }
+
+}
