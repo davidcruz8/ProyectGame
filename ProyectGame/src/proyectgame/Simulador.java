@@ -7,8 +7,9 @@ package proyectgame;
 public class Simulador {
 
     public static void main(String[] args) {
-        Personaje heroe = new Personaje("heroe", 4, 6, 100, 4, 8);
-        Personaje monstruo = new Personaje("monstruo", 8, 3, 100, 6, 3);
+        Heroe heroe = new Heroe("heroe", 4, 6, 100, 4, 8);
+        Heroina heroina = new Heroina("heroina", 2, 9, 100, 2, 10);
+        Monstruo monstruo = new Monstruo("monstruo", 8, 3, 100, 6, 3);
 
         double NumeroRandom = Math.random();
         int NumeroRandomEntero = (int) (NumeroRandom * 2);
